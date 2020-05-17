@@ -11,7 +11,7 @@ def echo(update, context):
     command = context.args[0].lower()
     print(command)
     os.system("python3 phdler.py custom " + command)
-    update.message.replay(text="AllFATHER!")
+    update.message.reply(text="AllFATHER!")
     update.message.reply_video(video=open('handpicked/*.mp4', 'rb'), supports_streaming=True)    
 
 def main():
