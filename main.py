@@ -8,7 +8,7 @@ def bop(bot, update):
     chat_id = update.message.chat_id
     #bot.send_message(chat_id=chat_id,text="AllFATHER!")
     text_caps = ' '.join(context.args).upper()
-    bot.send_message(chat_id=chat_id,text=text_caps)
+    bot.send_message(chat_id=chat_id,text="text_caps")
     bot.send_video(chat_id=chat_id,video=open('test.mp4', 'rb'), supports_streaming=True)
 
 def main():
