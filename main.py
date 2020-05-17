@@ -12,7 +12,7 @@ def echo(update, context):
     print(command)
     os.system("python3 phdler.py custom " + command)
     update.message.reply(text="AllFATHER!")
-    update.message.reply_video(video=open('handpicked/*.mp4', 'rb'), supports_streaming=True)    
+    update.message.reply_video('handpicked/*.mp4', supports_streaming=True)    
 
 def main():
     updater = Updater('1228609641:AAEiAwIeyqAByW95S_OxWFITi0JUu9HjyGU',use_context=True)
