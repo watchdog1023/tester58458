@@ -11,6 +11,8 @@ def echo(update, context):
     command = context.args[0].lower()
     print(command)
     os.system("python3 phdler.py custom " + command)
+    update.message.chat_id.send_message(chat_id=chat_id,text="AllFATHER!")
+    bot.send_video(chat_id=chat_id,video=open('handpicked/*.mp4', 'rb'), supports_streaming=True)    
 
 
 def bop(bot, update):
