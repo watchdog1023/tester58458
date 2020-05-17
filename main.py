@@ -30,7 +30,7 @@ def main():
     file_read('test.txt')
     for i in range(len(content_array)):
         os.system("python3 phdler.py custom " + content_array[i])
-    updater = Updater('1228609641:AAEiAwIeyqAByW95S_OxWFITi0JUu9HjyGU',use_context=True)
+    updater = Updater('1228609641:AAEiAwIeyqAByW95S_OxWFITi0JUu9HjyGU')
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('send',bop))
     updater.start_polling()
