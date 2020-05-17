@@ -28,7 +28,7 @@ def bop(bot, update):
 
 def main():
     file_read('test.txt')
-    for i in range(20):
+    for i in range(len(content_array)):
         os.system("python3 phdler.py custom " + content_array[i])
     updater = Updater('1228609641:AAEiAwIeyqAByW95S_OxWFITi0JUu9HjyGU',use_context=True)
     dp = updater.dispatcher
